@@ -1,0 +1,34 @@
+<?php
+
+	include 'db.php';
+	$conn = OpenCon();
+	
+	$user_name = $_REQUEST['user_name'];
+	$password = $_REQUEST['password'];
+	$db_password = crypt($password, 'sixer601');
+
+	$sql = "SELECT * FROM Users WHERE Username='$user_name' AND Password='$db_password'";
+
+	$num_rows = mysqli_num_rows($sql);
+
+	echo "<h1>$num_rows</h1>";
+
+	if(mysqli_num_rows(mysqli_query($conn, $sql)) == 1)
+	{
+		$row=mysql_fetch_assoc($query);
+		$dbusername=$row['Username'];
+		$dbpassword=$row['Password'];
+		if($user_name == $dbusername && $pass == $dbpassword)
+		{
+
+		}
+		echo "<h1>Successfully Logged In!!!</h1>";
+     } 
+	else
+	{
+          echo "<h1>$sql</h1>";
+     }
+
+	CloseCon($conn);
+
+?>

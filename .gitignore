@@ -1,0 +1,6 @@
+# Ignore temporary file
+*.tmp
+# Ignore log files
+*.log
+# Ignore sensitive information
+config.php

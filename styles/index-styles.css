@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #277;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #222;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #111;
+}
+
+.topnav-right {
+	float: right;
+}
+
+
+/* Style the header */
+.header {
+	padding: 10px;
+	text-align: center;
+}
+
+.bio {
+	margin: 50px;
+	padding: 20px;
+	color: white;
+	background-color: #333;
+	border: 1px solid black;
+	box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+	text-align: center;
+}
+
