@@ -6,7 +6,7 @@
 	$user_name = $_REQUEST['user_name'];
 	$password = $_REQUEST['password'];
 
-	$sql = "SELECT * FROM Users WHERE Username='$user_name'";
+	$sql = "CALL pr_GetUserByUsername($'$user_name')";
 	$result = $conn->query($sql);
 
 	if ($result->num_rows == 1) 
